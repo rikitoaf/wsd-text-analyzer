@@ -9,7 +9,7 @@
     "lite": "node --inspect=0.0.0.0 -r ts-node/register/transpile-only ./src/server.ts",
     "lint": "eslint . --ext .ts",
     "lint:fix": "eslint --fix --ext .ts",
-    "test": "mocha --require ts-node/register/transpile-only src/tests/*.ts",
+    "test": "mocha --require ts-node/register './src/tests/*.ts'",
     "build": "tsc",
     "compile": "tsc -w",
     "run-script": "NODE_ENV=development TS_NODE_PROJECT='tsconfig.json' node --require ts-node/register/transpile-only",
