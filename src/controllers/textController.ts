@@ -1,6 +1,6 @@
 import { Request, Response } from 'express';
 import { Text } from '../models/textModel';
-import { textServices } from 'src/services';
+import { textServices } from '../services';
 // import redisClient from '../config/redisClient';
 
 export const createText = async (req: Request, res: Response) => {
