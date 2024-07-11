@@ -1,0 +1,8 @@
+charts
+coverage
+dist
+docker
+node_modules
+
+# not a .ts files
+!*.ts
