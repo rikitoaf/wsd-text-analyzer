@@ -1,0 +1,14 @@
+FROM node:20.10-slim as build
+
+WORKDIR /code
+
+ADD ./package.json .
+ADD ./yarn.lock .
+
+RUN yarn install --ignore-optional
+
+COPY . .
+
+RUN yarn build
+
+CMD ["yarn", "start"]
