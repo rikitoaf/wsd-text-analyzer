@@ -27,4 +27,4 @@ const textSchema = new mongoose.Schema(
 
 export type TextDocument = TextType & mongoose.Document;
 
-export const TextModel = mongoose.model<TextDocument>('Text', textSchema);
+export const Text = mongoose.model<TextDocument>('Text', textSchema);
